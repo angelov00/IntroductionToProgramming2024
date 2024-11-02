@@ -1,9 +1,11 @@
 #include <iostream>
 
-double average(int numbers[], int size) {
-    if (size == 0) return 0.0; 
+const unsigned MAX_SIZE = 64;
 
-    double sum = 0;
+double average(int numbers[], unsigned size) {
+    if (size == 0) return 0.0;
+
+    double sum = 0.0;
     for (int i = 0; i < size; ++i) {
         sum += numbers[i];
     }
@@ -12,12 +14,12 @@ double average(int numbers[], int size) {
 }
 
 int main() {
-	
-	const int size = 5;
-    int numbers[size] = {1, 3, 3, 4, 5}; 
-   
+
+    unsigned size = 5;
+    int numbers[MAX_SIZE] = { 1, 3, 3, 4, 5 };
+
     double avg = average(numbers, size);
-    std::cout << "Средната аритметична стойност е: " << avg << std::endl;
+    std::cout << "Average: " << avg << std::endl;
 
     return 0;
 }
