@@ -74,11 +74,11 @@ int main() {
     }
 
     // Записване на текст в файла
-    std::outFile << "Hello world!" << std::endl;
-    std::outFile << "An example for writing in a file" << std::endl;
+    outFile << "Hello world!" << std::endl;
+    outFile << "An example for writing in a file" << std::endl;
 
     // Затваряне на файла
-    std::outFile.close();
+    outFile.close();
 
     return 0;
 }
@@ -180,7 +180,7 @@ int main() {
 
 # Задача 1
 
-Създайте програма, която записва първите `n` числа в текстов файл, като всяко бъде на нов ред.
+Създайте програма, която записва първите `n` прости числа в текстов файл, като всяко число бъде на нов ред.
 
 ---
 
